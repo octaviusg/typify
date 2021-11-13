@@ -1,0 +1,10 @@
+.registerContainer {
+  display: flex;
+}
+
+@media screen and (max-width: 480px) {
+  .registerContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

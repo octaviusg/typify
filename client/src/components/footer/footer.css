@@ -1,0 +1,32 @@
+.footerContainer {
+  color: #292929;
+  padding: 25px;
+  position: fixed;
+  letter-spacing: 0.7px;
+  right: 0;
+  bottom: 0;
+  font-size: 8.2pt;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  z-index: 90;
+}
+
+.footerNav {
+  list-style: none;
+}
+
+.footerNav li {
+  padding: 0.3rem;
+  cursor: pointer;
+}
+
+.footerNav li:hover {
+  background-color: #0e0e0e;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 480px) {
+  .footerContainer {
+    display: none;
+  }
+}

@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Rubik";
+  font-weight: normal;
+  src: url("../fonts/Rubik-Regular.ttf") format("truetype");
+}
+
+.sidebarContainer {
+  max-width: 3rem;
+  padding: 0 10px 0 10px;
+  height: calc(100vh - 5px);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+}
+
+.brandingLink {
+  text-decoration: none;
+  color: #292929;
+}
+
+.branding {
+  padding-top: 1.3rem;
+  font-family: "Rubik";
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.userIcon {
+  padding-bottom: 1rem;
+}
+
+.profileIcon {
+  color: #292929;
+  font-size: 8pt;
+}
+
+.profileIcon:hover {
+  color: #e0e0e0;
+}
+
+.nav-active {
+  color: #e0e0e0;
+}
+.size {
+  font-size: 18pt !important;
+}
+@media screen and (max-width: 480px) {
+  .sidebarContainer {
+    display: none;
+  }
+}

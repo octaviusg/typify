@@ -1,0 +1,45 @@
+.feedContainer {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  margin-top: 3.5rem;
+  border-top: solid #b6b6b6 1px;
+  z-index: 2;
+}
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -38px; /* gutter size offset */
+}
+.my-masonry-grid_column {
+  padding-left: 16px; /* gutter size */
+  background-clip: padding-box;
+}
+
+/* Style your items */
+.my-masonry-grid_column > div {
+  /* change div to reference your elements you put in <Masonry> */
+
+  margin: 20px 0 5px 0;
+}
+
+@media screen and (max-width: 480px) {
+  .feedContainer {
+    margin-bottom: 4rem;
+    border-top: none;
+    margin-top: 0.5rem;
+    z-index: 90;
+    padding: 0 1rem 0 1rem;
+  }
+
+  .my-masonry-grid {
+    margin-left: 0; /* gutter size offset */
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 0;
+  }
+}

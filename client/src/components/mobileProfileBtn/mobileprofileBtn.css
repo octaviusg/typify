@@ -1,0 +1,24 @@
+.mobileProfileBtn {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobileProfileBtn {
+    display: inline;
+    padding: 0.5rem 0.6rem 0.5rem;
+    border-radius: 100%;
+    position: fixed;
+    z-index: 90;
+    right: 1rem;
+    bottom: 1.6rem;
+    background-color: #e2e2e2;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  }
+
+  .u-icon {
+    color: #ffffff;
+  }
+  .u-icon:hover {
+    color: #afafaf;
+  }
+}

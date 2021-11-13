@@ -1,0 +1,11 @@
+.adminpostContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+  .adminpostContainer {
+    display: flex;
+    flex-direction: column;
+  }
+}

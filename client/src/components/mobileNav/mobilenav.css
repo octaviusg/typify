@@ -1,0 +1,18 @@
+.mobileBrandContainer {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mobileBrandContainer {
+    position: sticky;
+    top: 0;
+    display: inline;
+    margin-left: 1rem;
+    z-index: 1000;
+  }
+
+  .branding {
+    padding-top: 2rem;
+    font-size: 12pt;
+  }
+}
