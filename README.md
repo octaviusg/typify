@@ -30,7 +30,7 @@ Blog application for sharing images.
 ## Info
 
    <a href="https://github.com/octaviusg/albumcover">
-    <img src="./public/assets/screenshots/typifyscreen.png" alt="app-screenshot" height="300">
+    <img src="./client/public/assets/screenshots/typifyscreen.png" alt="app-screenshot" height="300">
   </a>
 
 Built like an image blog app with the feature of letting users create their own accounts to bookmark any post within the website. Admins are the only users who can curate website.
@@ -51,7 +51,7 @@ Built like an image blog app with the feature of letting users create their own 
 
 <br>
 
-See the [open issues](https://github.com/octaviusg/tipify/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/octaviusg/typify/issues) for a full list of proposed features (and known issues).
 
 ## License
 
@@ -63,6 +63,6 @@ Distributed under the MIT License.
 
 Octavio Garcia - [@octaviodevs](https://www.instagram.com/octaviodevs/) - hello@octaviogarcia.co
 
-Project Link: [https://github.com/octaviusg/tipify](https://github.com/octaviusg/tipify)
+Project Link: [https://github.com/octaviusg/typify](https://github.com/octaviusg/typify)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
