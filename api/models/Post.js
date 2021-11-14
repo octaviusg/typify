@@ -1,22 +1,22 @@
 const mongoose = require("mongoose");
-
-const UserSchema = new mongoose.Schema(
+const PostSchema = new mongoose.Schema(
   {
-    url: {
+    userId: {
       type: String,
       required: true,
     },
+    url: {
+      type: String,
+    },
     image: {
       type: String,
-      required: true,
     },
     categories: {
       type: Array,
       required: false,
     },
   },
-
   { timestamps: true }
 );
 
-module.exports = mongoose.model("Post", UserSchema);
+module.exports = mongoose.model("Post", PostSchema);
