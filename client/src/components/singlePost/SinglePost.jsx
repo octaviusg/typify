@@ -2,11 +2,10 @@ import React from "react";
 import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import "./singlePost.css";
 import { ExternalLink } from "react-external-link";
-import Aos from "aos";
-import "aos/dist/aos.css";
+
 
 export default function SinglePost({ post }) {
-  Aos.init({ duration: 2000 });
+
 
   console.log(post);
   function truncateString(string, limit) {

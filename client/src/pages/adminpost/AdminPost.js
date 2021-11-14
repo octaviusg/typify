@@ -1,6 +1,5 @@
 import React from "react";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Feed from "../../components/feed/Feed";
 import "./adminpost.css";
 import AdminPostForm from "../../components/adminpostform/AdminPostForm";
 import Footer from "../../components/footer/Footer";

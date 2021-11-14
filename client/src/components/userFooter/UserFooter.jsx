@@ -6,7 +6,7 @@ export default function UserFooter() {
     <div className="footerContainer">
       <ul className="footerNav">
         <Link className="footerLink" to="/register">
-          <li>Register > </li>
+          <li>Register </li>
         </Link>
         <Link className="footerLink" to="/">
           <li>Information</li>

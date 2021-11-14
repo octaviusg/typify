@@ -1,6 +1,6 @@
 import React from "react";
 import "./sidebar.css";
-import PersonIcon from "@material-ui/icons/Person";
+
 import { NavLink } from "react-router-dom";
 
 export default function Sidebar() {
@@ -11,13 +11,8 @@ export default function Sidebar() {
       </NavLink>
 
       <div className="userIcon">
-        <NavLink
-          className="profileIcon"
-          exact
-          to="/register"
-          activeClassName="nav-active"
-        >
-          <PersonIcon activeClassName="nav-active" className="size" />
+        <NavLink className="profileIcon" to="/register">
+          person
         </NavLink>
       </div>
     </div>
