@@ -14,7 +14,7 @@ export default function Home() {
     const fetchPosts = async () => {
       const res = await axios.get("/posts");
 
-      console.log(res);
+      setPosts(res.data);
     };
     fetchPosts();
   }, []);
@@ -23,7 +23,7 @@ export default function Home() {
     <div className="homeContainer">
       <Sidebar />
       <MobileNav />
-      <Feed />
+      <Feed posts={posts} />
       <MobileProfileBtn />
       <Footer />
     </div>

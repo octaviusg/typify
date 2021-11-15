@@ -2,16 +2,15 @@ import React from "react";
 import "./feed.css";
 import SinglePost from "../singlePost/SinglePost";
 import Masonry from "react-masonry-css";
-import { Posts } from "../../dummyData";
 
-export default function Feed() {
+export default function Feed({ posts }) {
   const breakpoints = {
     default: 4,
     1200: 3,
     900: 2,
     700: 1,
   };
-  window.addEventListener("load", Masonry.refresh);
+
   return (
     <div className="feedContainer">
       <Masonry
@@ -19,8 +18,8 @@ export default function Feed() {
         className="my-masonry-grid"
         columnClassName="my-masonry-grid_column"
       >
-        {Posts.map((p) => (
-          <SinglePost key={p.id} post={p} />
+        {posts.map((p) => (
+          <SinglePost key={p} post={p} />
         ))}
       </Masonry>
     </div>

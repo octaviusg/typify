@@ -15,6 +15,10 @@ const PostSchema = new mongoose.Schema(
       type: Array,
       required: false,
     },
+    bookmarks: {
+      type: Array,
+      default: [],
+    },
   },
   { timestamps: true }
 );

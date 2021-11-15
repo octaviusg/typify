@@ -28,6 +28,7 @@ router.put("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 // delete a post
 
 router.delete("/:id", async (req, res) => {
@@ -43,16 +44,17 @@ router.delete("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
 //like a post
 
-router.put("/:id/like", async (req, res) => {
+router.put("/:id/bookmark", async (req, res) => {
   try {
     const post = await Post.findById(req.params.id);
-    if (!post.likes.includes(req.body.userId)) {
-      await post.updateOne({ $push: { likes: req.body.userId } });
+    if (!post.bookmarks.includes(req.body.userId)) {
+      await post.updateOne({ $push: { bookmarks: req.body.userId } });
       res.status(200).json("the post has been liked");
     } else {
-      await post.updateOne({ $pull: { likes: req.body.userId } });
+      await post.updateOne({ $pull: { bookmarks: req.body.userId } });
       res.status(200).json("the post has been disliked");
     }
   } catch (err) {
@@ -69,6 +71,8 @@ router.get("/:id", async (req, res) => {
     res.status(500).json(err);
   }
 });
+
+//get categories
 
 router.get("/", async (req, res) => {
   const username = req.query.user;
@@ -95,7 +99,7 @@ router.get("/", async (req, res) => {
 //get bookmarked posts
 router.get("/bookmarks/:userId", async (req, res) => {
   try {
-    const posts = await Post.find({ likes: req.params.userId });
+    const posts = await Post.find({ bookmarks: req.params.userId });
 
     res.status(200).json(posts.sort());
   } catch (err) {

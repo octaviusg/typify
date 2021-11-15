@@ -3,11 +3,7 @@ import BookmarkBorderIcon from "@material-ui/icons/BookmarkBorder";
 import "./singlePost.css";
 import { ExternalLink } from "react-external-link";
 
-
 export default function SinglePost({ post }) {
-
-
-  console.log(post);
   function truncateString(string, limit) {
     if (string.length > limit) {
       return string.substring(0, limit) + ".....";
@@ -33,7 +29,7 @@ export default function SinglePost({ post }) {
         </div>
       </div>
 
-      <img src={post.photo} alt="" className="postImg" />
+      <img src={post.image} alt="" className="postImg" />
     </div>
   );
 }
